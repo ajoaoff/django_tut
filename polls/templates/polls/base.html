@@ -1,0 +1,45 @@
+{% extends "foundation/base.html" %}
+
+{% block title %}Polls tutorial{% endblock %}
+
+{% block base_body %}
+    <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+    <nav class="tab-bar show-for-small">
+        <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+    </nav>
+    <aside class="left-off-canvas-menu">
+        <ul class="off-canvas-list">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+        </ul>
+    </aside>
+    <a class="exit-off-canvas"></a>
+
+    <section role="main" class="scroll-container">
+    <div class="row">
+        <div class="medium-4 large-3 columns">
+            <div class="hide-for-small">
+                <div class="sidebar">
+                    <nav>
+                        <ul class="side-nav">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="small-12 medium-8 large-9 columns">
+        {% block content %}Your content goes here.{% endblock %}
+        </div>
+   </div>
+    </section>
+   </div>
+   </div>
+
+{% endblock %}
